@@ -1,0 +1,317 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Poppins&display=swap');
+
+
+:root {
+  --primary: #564853;
+  --secondary: #81697b;
+  --tertiary: #3a0d6f;
+  --light: #e8f8f8;
+  --dark: #00080b;
+  --error: rgb(56, 38, 33);
+  --spacing-one: calc(1rem * 0.5);
+  --spacing-two: calc(1rem);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  background-color: #f4f1ed;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding-bottom: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 350;
+  line-height: 2.5;
+  font-size: 25px;
+  color: var(--dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 350;
+  margin: 9px 0;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+a {
+  color: var(--tertiary);
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+
+header {
+  background-color: rgba(86, 72, 83, 0.5); /* #564853 with 50% transparency */
+  border-bottom: 1px solid rgba(86, 72, 83, 0.5); /* Optional: adds a border for better visibility */
+  height: 80px
+}
+
+header a {
+  color: var(--light);
+}
+header li {
+  text-decoration: none;
+  list-style: none;
+}
+header img {
+  max-width: 25%;
+  background-color: var(--light);
+}
+
+/* Slider */
+
+img, svg {
+  padding-top: 10px;
+
+}
+
+/* Footer */
+
+
+/* Button */
+
+button {
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0.25rem 1.5rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0 1.0px;
+  background-color: var(--secondary);
+}
+
+button:hover {
+  opacity: .9;
+}
+
+button[disabled] {
+  cursor: default;
+  opacity: .9;
+}
+
+img {
+  max-width: 100%;
+}
+
+span[role="img"] {
+  cursor: default;
+}
+
+/*  Form*/
+
+form {
+  width: 100%;
+  background-color: white;
+}
+
+input {
+  font-size: 1rem;
+  /* padding: 0.25rem; */
+  padding-left: 20rem;
+  border: 2px solid var(--dark);
+  outline: none;
+  border-radius: 3px;
+  transition: box-shadow 0.2s;
+}
+
+/* Form Input */
+
+input:focus {
+  border: 3px solid var(--dark);
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+}
+/* Contact Form input*/
+.formRow {
+  margin: 10px 0 20px 0;
+}
+.formInput {
+  padding: 15px 10px;
+  background-color: var(--whitesmoke);
+  box-shadow: 0 0 0 2px var(--dark);
+  border: 10px;
+  color: var(--blue);
+}
+.formInput:focus {
+  background-color: var(--grey);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--dark);
+  color: var(--dark);
+}
+
+.formInput::placeholder {
+  color: var(--dark);
+  opacity: 1;
+}
+
+.formInput:focus::placeholder {
+  color: var(--dark);
+  opacity: 1;
+}
+
+.errorMessage {
+  color: #f45532;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+#notifyToast {
+  color: #fff;
+  border-radius: 6px;
+  width: 200px;
+  margin-left: 75px;
+  background-color: var(--dark);
+}
+
+/* Container */
+
+.container {
+  width: 85%;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.mx-1 {
+  margin-right: var(--spacing-one);
+  margin-left: var(--spacing-one);
+}
+
+.mx-2 {
+  margin-right: var(--spacing-two);
+  margin-left: var(--spacing-two);
+}
+
+.my-1 {
+  margin-top: var(--spacing-one);
+  margin-bottom: var(--spacing-one);
+}
+
+.my-2 {
+  margin-top: var(--spacing-two);
+  margin-bottom: var(--spacing-two);
+}
+
+.px-1 {
+  padding-right: var(--spacing-one);
+  padding-left: var(--spacing-one);
+}
+
+.px-2 {
+  padding-right: var(--spacing-two);
+  padding-left: var(--spacing-two);
+}
+
+.py-1 {
+  padding-top: var(--spacing-one);
+  padding-bottom: var(--spacing-one);
+}
+
+.py-2 {
+  padding-top: var(--spacing-two);
+  padding-bottom: var(--spacing-two);
+}
+
+/*  card*/
+
+.card {
+  width: 25%;
+  text-align: center;
+}
+
+.error-text {
+  color: var(--error);
+}
+
+/* Media Screen */
+
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+/* Media Screen - Contact */
+@media (max-width: 768px) {
+  .submit-message {
+    width: 125px;
+    margin-left: 200px;
+  }
+}
+/* Media Screen Nav */
+@media screen and (max-width: 992px) {
+  nav {
+     font-size: medium;
+  }
+}
+
+/* Media Screen Header */
+@media screen and (max-width: 992px) {
+  header a {
+     font-size: medium;
+  }
+}
