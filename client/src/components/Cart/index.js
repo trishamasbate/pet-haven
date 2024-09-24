@@ -12,7 +12,7 @@ import { BiShocked } from 'react-icons/bi';
 import { BsCartFill } from 'react-icons/bs';
 
 // Initialize Stripe with your public key
-const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
+const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY);
 
 const Cart = () => {
   const [state, dispatch] = useStoreContext();
